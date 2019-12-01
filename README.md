@@ -2,6 +2,10 @@
 
 Itho Daalderop ventilator RFT remote Python interface
 
+## Credits
+
+This work has been inspired by [this project](https://github.com/adri/IthoEcoFanRFT), and started as a straightforward translation from C to Python.
+
 ## Installation
 
 This application depends on [pycc1101](https://github.com/kostyaz/pycc1101) library, which should be installed first.
