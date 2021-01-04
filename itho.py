@@ -311,6 +311,9 @@ def createMessageJoin(command, prev_command, counter):
 def sendCommand(command, prev_command, counter):
     msg1 = createMessageStart(command, prev_command)
 
+    # Prevent an array out of bounds error with a large counter
+    counter %= 219
+
     if command == 'IthoJoin':
         msg2 = createMessageJoin(command, prev_command, counter)
     else:
